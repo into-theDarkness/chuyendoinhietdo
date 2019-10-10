@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyendoinhietdo</title>
+</head>
+<body>
+Fahrenheit
+<input type ="number" id ="nhietdof" oninput="chuyendoinhietdo()" onchange="chuyendoinhietdo()">
+<br>
+Celcius:
+<h4 id = "nhietdoc"></h4>
+<script>
+    function chuyendoinhietdo() {
+        let a =document.getElementById("nhietdof").value;
+        let b = document.getElementById("nhietdoc").value;
+        document.getElementById("nhietdoc").innerHTML = b = (a-32)/1.8;
+
+    }
+</script>
+</body>
+</html>
